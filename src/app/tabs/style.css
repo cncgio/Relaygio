@@ -1,0 +1,4 @@
+ion-content::part(background) {
+    --background: url('../../assets/images/RELAY\ Background.jpg') no-repeat center fixed;
+    background-size: cover;
+        }

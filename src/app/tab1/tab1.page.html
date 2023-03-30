@@ -1,17 +1,79 @@
-<ion-header [translucent]="true">
+ <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+  <ion-label style="font-size: 32px;">Welcome to O'hare!</ion-label>
     </ion-title>
   </ion-toolbar>
 </ion-header>
+  <body> 
+  <div class = "row responsive-sm">
+  </div>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu Content</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">This is the menu content.</ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-card>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
-</ion-content>
+        <ion-card-header>
+          <ion-title>Hello, Cameron!</ion-title>
+          <ion-card-title>Field Technician</ion-card-title>
+          <ion-card-subtitle>Field Status</ion-card-subtitle>
+          <ion-button>
+            P1 - P5 Notifications
+            </ion-button>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-avatar >
+            <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+          </ion-avatar>
+        </ion-card-content>
+      </ion-card> 
+     <body></body>
+      <ion-button id="hover-trigger">CHAT
+        <ion-icon slot="end" name="chatbubbles-sharp"></ion-icon>
+      </ion-button>
+      <ion-popover trigger="hover-trigger" triggerAction="hover">
+        <ng-template>
+          <ion-content class="ion-padding">How can we help?</ion-content>
+        </ng-template>
+      </ion-popover>
+      <ion-button>Tech Hub</ion-button>
+      <div>
+        <img src="../../assets/images/ORD MAP.JPG" alt="../../assets/images/ORD MAP.jpg" width="450" height="200"></div>
+   
+   
+    </ion-content>
+    <ion-button>
+      Curbside
+      </ion-button>
+      <ion-button>
+      Lobby
+      </ion-button>
+      <ion-button>
+      Gates
+      </ion-button>
+      <ion-button>
+      Baggage Claim
+      </ion-button>
+      <ion-button>
+      Global Service
+      </ion-button>
+      <ion-button>
+      Customer Service
+      </ion-button>
+  </div>
+ 
+ 
